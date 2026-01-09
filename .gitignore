@@ -1,0 +1,9 @@
+# Model files
+*.pkl
+
+# Dataset
+Sample audios - RAVDEES/
+
+# Python cache
+__pycache__/
+.ipynb_checkpoints/

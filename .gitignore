@@ -1,5 +1,5 @@
 # Model files
-*.pkl
+#*.pkl
 
 # Dataset
 Sample audios - RAVDEES/

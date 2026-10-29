@@ -24,7 +24,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("data:image/webp;base64,{encoded_bg}");
+        background-image: url("data:image/jpeg;base64,{encoded_bg}");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -47,13 +47,34 @@ st.markdown(
     [data-testid="collapsedControl"] svg {{
         color: white;
     }}
-    .css-1d391kg, .css-1v3fvcr {{
-        background-color: #2b2b2b !important;
-        color: #ffebc6 !important;
-    }}
-    .css-1v3fvcr .css-10trblm, .css-1d391kg .css-10trblm {{
-        color: #ffebc6 !important;
-    }}
+    /* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #242424 !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] li,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #ffebc6 !important;
+}
+
+/* Sidebar radio selection */
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    color: #ffebc6 !important;
+}
+
+/* Sidebar headings */
+[data-testid="stSidebar"] h1 {
+    color: #ffdd99 !important;
+}
+
+/* Sidebar hover */
+[data-testid="stSidebar"] button:hover {
+    background-color: #393939 !important;
+}
     .main-title {{
         text-align: center;
         margin-top: 1rem;
@@ -102,6 +123,25 @@ st.markdown(
         margin-top: 2rem;
         font-size: 1.1rem;
     }}
+    /* Upload widget */
+[data-testid="stFileUploader"] {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Microphone widget */
+[data-testid="stAudioInput"] {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* General widget labels */
+.stFileUploader label,
+[data-testid="stAudioInput"] label {
+    color: #ffebc6 !important;
+}
     </style>
     <div class="main-title">
         <h4>Welcome to</h4>

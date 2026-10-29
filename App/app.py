@@ -11,7 +11,8 @@ import base64
 # PAGE CONFIGURATION
 st.set_page_config(
     page_title="Speech Emotion Recognition",
-    layout="centered"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # PROJECT PATHS
